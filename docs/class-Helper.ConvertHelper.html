@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Class Helper\ConvertHelper</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?2816280211"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Helper.html">Helper</a>
+						</li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Helper.ConvertHelper.html">ConvertHelper</a></li>
+				<li><a href="class-Helper.CoreHelper.html">CoreHelper</a></li>
+				<li><a href="class-Helper.CurrencyHelper.html">CurrencyHelper</a></li>
+				<li><a href="class-Helper.HelperException.html">HelperException</a></li>
+				<li><a href="class-Helper.NumberHelper.html">NumberHelper</a></li>
+				<li><a href="class-Helper.TextHelper.html">TextHelper</a></li>
+				<li><a href="class-Helper.TimeHelper.html">TimeHelper</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-Helper.html" title="Summary of Helper"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Class ConvertHelper</h1>
+
+	<div class="description">
+	
+<p>Some convertion methods. Support for temperature, Weight, Speed, Length.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Helper.CoreHelper.html">Helper\CoreHelper</a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Helper\ConvertHelper</b>			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Helper.html">Helper</a><br />
+
+				<b>Description:</b>
+				Formats are used by php mumber_format() function: "format" (string): Template
+name from 'formats', "formats" (Array): Set callable format <acronym
+title="dec_point), (thousands_sep">Array</acronym>. used by number_format()
+function.<br />
+				<b>Extends:</b>
+				MainHelper<br />
+		<b>Located at</b> <a href="source-Helper.ConvertHelper.html#6" title="Go to source code">classes/convertHelper.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="temperature" id="_temperature">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_temperature">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.ConvertHelper.html#21" title="Go to source code">temperature</a>(
+				integer
+				<var>$value</var> = <span class="php-num">1</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert temperatures. Based on <a
+href="http://www.phpsnaps.com/snaps/view/temperature-converter/">http://www.phpsnaps.com/snaps/view/temperature-converter/</a>
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert temperatures. Based on <a
+href="http://www.phpsnaps.com/snaps/view/temperature-converter/">http://www.phpsnaps.com/snaps/view/temperature-converter/</a></p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code><br /> (default: 1): Number to convert</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "precision" (int): decimals, "unit" (bool): display 'to'
+unit, "from" (string): unit base, "to" (string): unit destination</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="weight" id="_weight">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_weight">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.ConvertHelper.html#54" title="Go to source code">weight</a>(
+				integer
+				<var>$value</var> = <span class="php-num">1</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert weight.
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert weight.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code><br /> (default: 1): Number to convert</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "precision" (int): decimals, "unit" (bool): display 'to'
+unit, "from" (string): unit base, "to" (string): unit destination</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="speed" id="_speed">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_speed">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.ConvertHelper.html#72" title="Go to source code">speed</a>(
+				integer
+				<var>$value</var> = <span class="php-num">1</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert Speed.
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert Speed.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code><br /> (default: 1): Number to convert</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "precision" (int): decimals, "unit" (bool): display 'to'
+unit, "from" (string): unit base, "to" (string): unit destination</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="length" id="_length">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_length">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.ConvertHelper.html#91" title="Go to source code">length</a>(
+				integer
+				<var>$value</var> = <span class="php-num">1</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert Lenght.
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert Lenght.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code><br /> (default: 1): Number to convert</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "precision" (int): decimals, "unit" (bool): display 'to'
+unit, "from" (string): unit base, "to" (string): unit destination</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generic_calculator" id="_generic_calculator">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 protected static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_generic_calculator">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.ConvertHelper.html#109" title="Go to source code">generic_calculator</a>(
+				mixed
+				<var>$func</var>, 
+				mixed
+				<var>$value</var>, 
+				mixed
+				<var>$args</var>
+		)</code>
+
+		<div class="short">
+			generic_calculator function.
+		</div>
+
+		<div class="detailed">
+			
+<p>generic_calculator function.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$func</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$args</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods Inherited From <a href="class-Helper.CoreHelper.html#methods">Helper\CoreHelper</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Helper.CoreHelper.html#__init">_init()</a>, 
+<a href="class-Helper.CoreHelper.html#_extend">extend()</a>, 
+<a href="class-Helper.CoreHelper.html#_format_number">format_number()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_config">get_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_lang">get_lang()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_config">set_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_template">set_template()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.ConvertHelper.html#19" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td width="1%"><code></code></td>
+		<td><div class="position">
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+</div>
+
+		<div id="footer">
+			 API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

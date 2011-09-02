@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Class Helper\TextHelper</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?2816280211"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Helper.html">Helper</a>
+						</li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Helper.ConvertHelper.html">ConvertHelper</a></li>
+				<li><a href="class-Helper.CoreHelper.html">CoreHelper</a></li>
+				<li><a href="class-Helper.CurrencyHelper.html">CurrencyHelper</a></li>
+				<li><a href="class-Helper.HelperException.html">HelperException</a></li>
+				<li><a href="class-Helper.NumberHelper.html">NumberHelper</a></li>
+				<li class="active"><a href="class-Helper.TextHelper.html">TextHelper</a></li>
+				<li><a href="class-Helper.TimeHelper.html">TimeHelper</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-Helper.html" title="Summary of Helper"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Class TextHelper</h1>
+
+	<div class="description">
+	
+<p>Core Dependencies:</p>
+
+<ul>
+	<li>Html class</li>
+
+	<li>Config class</li>
+
+	<li>Inflector</li>
+
+	<li>Lang</li>
+</ul>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Helper.CoreHelper.html">Helper\CoreHelper</a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Helper\TextHelper</b>			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Helper.html">Helper</a><br />
+
+				<b>Extends:</b>
+				CoreHelper<br />
+		<b>Located at</b> <a href="source-Helper.TextHelper.html#6" title="Go to source code">classes/textHelper.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="cycle" id="_cycle">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_cycle">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#32" title="Go to source code">cycle</a>(
+		)</code>
+
+		<div class="short">
+			Works as the core Iflector::cycle, but with configurable function args.
+		</div>
+
+		<div class="detailed">
+			
+<p>Works as the core Iflector::cycle, but with configurable function args.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+				<h4>Example</h4>
+				<div class="smallList">
+						$cycle = Text::cycle('odd', 'even');<br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="pluralize" id="_pluralize">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_pluralize">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#55" title="Go to source code">pluralize</a>(
+				integer
+				<var>$count</var> = <span class="php-num">0</span>, 
+				String
+				<var>$singular</var>, 
+				Array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Auto pluralize words.
+		</div>
+
+		<div class="detailed">
+			
+<p>Auto pluralize words.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$count</var></dt>
+					<dd><code>integer</code><br /> (default: 0): base number. can be an array</dd>
+					<dt><var>$singular</var></dt>
+					<dd><code>String</code><br />$singular: singular string</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>Array</code><br /> (optionnal) "method" ('size' / 'sum'): how to count array values "count" (true
+/ false) : output count with string "plural": force string pluralization.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="highlight" id="_highlight">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_highlight">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#94" title="Go to source code">highlight</a>(
+				mixed
+				<var>$str</var>, 
+				mixed
+				<var>$words</var> = <span class="php-keyword2">array</span>(), 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Hilight words in a text.
+		</div>
+
+		<div class="detailed">
+			
+<p>Hilight words in a text.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>mixed</code><br />$text: the text to search in</dd>
+					<dt><var>$words</var></dt>
+					<dd><code>mixed</code><br /> (String or Array): words to highlight</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> : "match" (string): 'word' or 'string', "tag" (string): HTML tag name, "attrs"
+(array) HTML attributes</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="censor" id="_censor">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_censor">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#128" title="Go to source code">censor</a>(
+				string
+				<var>$str</var> = <span class="php-quote">&quot;&quot;</span>, 
+				string
+				<var>$replace</var> = <span class="php-quote">&quot;&quot;</span>, 
+				array
+				<var>$censored</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Censor words and replace them if needed.
+		</div>
+
+		<div class="detailed">
+			
+<p>Censor words and replace them if needed.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>string</code><br /> (default: ""): String to search for censored words</dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>string</code><br /> (default: ""): replacement</dd>
+					<dt><var>$censored</var></dt>
+					<dd><code>array</code><br /> (default: array()) censored words</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sanitize" id="_sanitize">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_sanitize">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#159" title="Go to source code">sanitize</a>(
+				string
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			An alias to htmLawed(). Check <a
+href="http://www.bioinformatics.org/phplabware/internal_utilities/htmLawed/htmLawed_README.htm#s2.2">http://www.bioinformatics.org/phplabware/internal_utilities/htmLawed/htmLawed_README.htm#s2.2</a>
+for sanitizer configuration
+		</div>
+
+		<div class="detailed">
+			
+<p>An alias to htmLawed(). Check <a
+href="http://www.bioinformatics.org/phplabware/internal_utilities/htmLawed/htmLawed_README.htm#s2.2">http://www.bioinformatics.org/phplabware/internal_utilities/htmLawed/htmLawed_README.htm#s2.2</a>
+for sanitizer configuration</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array())</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="limit_words" id="_limit_words">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_limit_words">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#182" title="Go to source code">limit_words</a>(
+				string
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Limits a text to a given number of words. (Inspired by Kohana Framewok)
+		</div>
+
+		<div class="detailed">
+			
+<p>Limits a text to a given number of words. (Inspired by Kohana Framewok)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>string</code><br />$str: phrase to limit words of</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "length": number of words to keep, "trail": ommission
+string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="limit_chars" id="_limit_chars">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_limit_chars">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#208" title="Go to source code">limit_chars</a>(
+				string
+				<var>$string</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Limit a text to a given characters. Alias of \Str:truncate(), with configurable
+parameters
+		</div>
+
+		<div class="detailed">
+			
+<p>Limit a text to a given characters. Alias of \Str:truncate(), with
+configurable parameters</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$string</var></dt>
+					<dd><code>string</code><br />$str: phrase to limit characters of</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "length": number of characters to keep; "trail": ommission
+string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="html_split" id="_html_split">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_html_split">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#227" title="Go to source code">html_split</a>(
+				mixed
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Split text and wrap it into 3 html part: excerpt, read more, and text (whitout
+excerpt). Usefull for Javascript based excerpts...
+		</div>
+
+		<div class="detailed">
+			
+<p>Split text and wrap it into 3 html part: excerpt, read more, and text
+(whitout excerpt). Usefull for Javascript based excerpts...</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array())</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="html_simple" id="_html_simple">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_html_simple">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#255" title="Go to source code">html_simple</a>(
+				mixed
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert plain text to basic
+<p>and<br />
+HTML.</p>
+
+		</div>
+
+		<div class="detailed">
+			Convert plain text to basic
+<p>and<br />
+HTML.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>mixed</code><br />$text</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "tag" (string) customize wrapper tag, "attrs" (array):
+customize wrapper attrs, see html_tag() function.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="auto_link" id="_auto_link">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_auto_link">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#276" title="Go to source code">auto_link</a>(
+				mixed
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Auto link both emails and urls.
+		</div>
+
+		<div class="detailed">
+			
+<p>Auto link both emails and urls.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()) "attrs" (array): html attributes, "safe_mail" (bool): rely
+to safe_mail for core Html:mail_to_safe()</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="auto_link_emails" id="_auto_link_emails">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_auto_link_emails">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#299" title="Go to source code">auto_link_emails</a>(
+				mixed
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Auto link Emails found in $str.... (Inspired by cakephp framework)
+		</div>
+
+		<div class="detailed">
+			
+<p>Auto link Emails found in $str.... (Inspired by cakephp framework)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()) "attrs" (array): html attributes, "safe_mail" (bool): rely
+to safe_mail for core Html:mail_to_safe()</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="auto_link_urls" id="_auto_link_urls">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_auto_link_urls">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#327" title="Go to source code">auto_link_urls</a>(
+				mixed
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Auto link Urls found in $str…. (Inspired by cakephp framework).
+		</div>
+
+		<div class="detailed">
+			
+<p>Auto link Urls found in $str…. (Inspired by cakephp framework).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>mixed</code><br />$str: str to parse</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "'attrs" (array): HTML attributes</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="keywords" id="_keywords">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_keywords">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TextHelper.html#356" title="Go to source code">keywords</a>(
+				mixed
+				<var>$str</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			extract and output keywords from text. Kewords are sorted by relevance
+(descending) Words and punctuations exclusions are located in language file.
+		</div>
+
+		<div class="detailed">
+			
+<p>extract and output keywords from text. Kewords are sorted by relevance
+(descending) Words and punctuations exclusions are located in language file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$str</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br />$args. (default: array()): "min_occur" (int): Minimum of word occurrences in
+$str to consider, "min_length" (int): Minimum words length to consider, "max"
+(int): Maximum of keywords to consider, "separator" (string): Ouput keywords
+separator</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods Inherited From <a href="class-Helper.CoreHelper.html#methods">Helper\CoreHelper</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Helper.CoreHelper.html#__init">_init()</a>, 
+<a href="class-Helper.CoreHelper.html#_extend">extend()</a>, 
+<a href="class-Helper.CoreHelper.html#_format_number">format_number()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_config">get_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_lang">get_lang()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_config">set_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_template">set_template()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.TextHelper.html#17" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td width="1%"><code></code></td>
+		<td><div class="position">
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="is_extended" id="$is_extended">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			boolean
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.TextHelper.html#20" title="Go to source code"><var>$is_extended</var></a>
+		</td>
+		<td width="1%"><code><span class="php-keyword1">false</span></code></td>
+		<td><div class="position">
+			<a href="#$is_extended" class="anchor">#</a>
+
+			<div class="short">
+				Set to True by auto_link method, when calling auto_link_urls() and
+auto_link_emails()
+			</div>
+
+			<div class="detailed">
+				
+<p>Set to True by auto_link method, when calling auto_link_urls() and
+auto_link_emails()</p>
+
+<p>(default value: false)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+</div>
+
+		<div id="footer">
+			 API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

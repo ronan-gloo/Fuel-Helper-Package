@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Class Helper\NumberHelper</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?2816280211"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Helper.html">Helper</a>
+						</li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Helper.ConvertHelper.html">ConvertHelper</a></li>
+				<li><a href="class-Helper.CoreHelper.html">CoreHelper</a></li>
+				<li><a href="class-Helper.CurrencyHelper.html">CurrencyHelper</a></li>
+				<li><a href="class-Helper.HelperException.html">HelperException</a></li>
+				<li class="active"><a href="class-Helper.NumberHelper.html">NumberHelper</a></li>
+				<li><a href="class-Helper.TextHelper.html">TextHelper</a></li>
+				<li><a href="class-Helper.TimeHelper.html">TimeHelper</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-Helper.html" title="Summary of Helper"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Class NumberHelper</h1>
+
+	<div class="description">
+	
+<p>Work with numeric data</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Helper.CoreHelper.html">Helper\CoreHelper</a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Helper\NumberHelper</b>			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Helper.html">Helper</a><br />
+
+				<b>Extends:</b>
+				CoreHelper<br />
+		<b>Located at</b> <a href="source-Helper.NumberHelper.html#6" title="Go to source code">classes/numberHelper.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="set_locale" id="_set_locale">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 protected static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_set_locale">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.NumberHelper.html#20" title="Go to source code">set_locale</a>(
+				string
+				<var>$locale</var> = <span class="php-keyword1">null</span>
+		)</code>
+
+		<div class="short">
+			If you need to override LC_MONETARY locale at some point…
+		</div>
+
+		<div class="detailed">
+			
+<p>If you need to override LC_MONETARY locale at some point…</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$locale</var></dt>
+					<dd><code>string</code><br /> (default: '')</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_formats" id="_set_formats">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_set_formats">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.NumberHelper.html#34" title="Go to source code">set_formats</a>(
+				string
+				<var>$value</var> = <span class="php-quote">''</span>
+		)</code>
+
+		<div class="short">
+			Alias to set_template from .
+		</div>
+
+		<div class="detailed">
+			
+<p>Alias to set_template from .</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code><br /> (default: '')</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="percentage" id="_percentage">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			float
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_percentage">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.NumberHelper.html#47" title="Go to source code">percentage</a>(
+				integer
+				<var>$num</var> = <span class="php-num">1</span>, 
+				integer
+				<var>$base</var> = <span class="php-keyword1">null</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Calculate the percentage of a number
+		</div>
+
+		<div class="detailed">
+			
+<p>Calculate the percentage of a number</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$num</var></dt>
+					<dd><code>integer</code><br /> (default: 1): amount to calculate</dd>
+					<dt><var>$base</var></dt>
+					<dd><code>integer</code><br /> (default: 100): total reference</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "mode" (string: up / down): round method, "precision"
+(int): float precision, "trail" (string): append chars (like "%")</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>float</code><br />or string<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_human" id="_to_human">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_human">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.NumberHelper.html#85" title="Go to source code">to_human</a>(
+				mixed
+				<var>$num</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert number tou human readeable format with specified unit..
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert number tou human readeable format with specified unit..</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$num</var></dt>
+					<dd><code>mixed</code><br />$num: numeric value</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()) "precision" (int): float precision, "unit" (string):
+language unit (they are configured in language file), "to" (string): Force
+convertion to specific unit</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_phone" id="_to_phone">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_phone">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.NumberHelper.html#122" title="Go to source code">to_phone</a>(
+				mixed
+				<var>$num</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert number to phone readable format
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert number to phone readable format</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$num</var></dt>
+					<dd><code>mixed</code><br />$num: numeric value</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "format" (string): select a pattern from the config file
+"country_code" (bool): display country code "area_code" (bool): format first
+numeric group to area code</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+				<h4>Todo:</h4>
+				<div class="smallList">
+						Define what to do if number length don't match steps length<br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_size" id="_to_size">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_size">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.NumberHelper.html#166" title="Go to source code">to_size</a>(
+				mixed
+				<var>$num</var>, 
+				integer
+				<var>$precision</var> = <span class="php-num">2</span>
+		)</code>
+
+		<div class="short">
+			Convert Byte to human readable size format. Size expressions are located in
+language file.
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert Byte to human readable size format. Size expressions are located in
+language file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$num</var></dt>
+					<dd><code>mixed</code><br />$num: bytes to pass</dd>
+					<dt><var>$precision</var></dt>
+					<dd><code>integer</code><br /> (default: 2): float precision</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_format" id="_to_format">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			Number
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_format">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.NumberHelper.html#209" title="Go to source code">to_format</a>(
+				mixed
+				<var>$num</var>, 
+				array
+				<var>$format</var> = <span class="php-keyword1">null</span>, 
+				
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Format delimiters in specific format template(related to config by default).
+		</div>
+
+		<div class="detailed">
+			
+<p>Format delimiters in specific format template(related to config by
+default).</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$num</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$format</var></dt>
+					<dd><code>array</code><br />$args (default: array()): respect order ! decimals, separator, thousands</dd>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>Number</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods Inherited From <a href="class-Helper.CoreHelper.html#methods">Helper\CoreHelper</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Helper.CoreHelper.html#__init">_init()</a>, 
+<a href="class-Helper.CoreHelper.html#_extend">extend()</a>, 
+<a href="class-Helper.CoreHelper.html#_format_number">format_number()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_config">get_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_lang">get_lang()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_config">set_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_template">set_template()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.NumberHelper.html#13" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td width="1%"><code></code></td>
+		<td><div class="position">
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="locale" id="$locale">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.NumberHelper.html#15" title="Go to source code"><var>$locale</var></a>
+		</td>
+		<td width="1%"><code><span class="php-keyword1">null</span></code></td>
+		<td><div class="position">
+			<a href="#$locale" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="units" id="$units">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.NumberHelper.html#17" title="Go to source code"><var>$units</var></a>
+		</td>
+		<td width="1%"><code><span class="php-keyword1">null</span></code></td>
+		<td><div class="position">
+			<a href="#$units" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+</div>
+
+		<div id="footer">
+			 API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

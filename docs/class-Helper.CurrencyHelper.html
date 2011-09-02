@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Class Helper\CurrencyHelper</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?2816280211"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Helper.html">Helper</a>
+						</li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Helper.ConvertHelper.html">ConvertHelper</a></li>
+				<li><a href="class-Helper.CoreHelper.html">CoreHelper</a></li>
+				<li class="active"><a href="class-Helper.CurrencyHelper.html">CurrencyHelper</a></li>
+				<li><a href="class-Helper.HelperException.html">HelperException</a></li>
+				<li><a href="class-Helper.NumberHelper.html">NumberHelper</a></li>
+				<li><a href="class-Helper.TextHelper.html">TextHelper</a></li>
+				<li><a href="class-Helper.TimeHelper.html">TimeHelper</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-Helper.html" title="Summary of Helper"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Class CurrencyHelper</h1>
+
+	<div class="description">
+	
+<p>Provide methods to works with currencies</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Helper.CoreHelper.html">Helper\CoreHelper</a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Helper\CurrencyHelper</b>			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Helper.html">Helper</a><br />
+
+				<b>Extends:</b>
+				MainHelper<br />
+				<b>Description::</b>
+				When called, this Helper automatically check for rates. You can override
+fetch_data() method to set your own $data array. Currency rates are by default
+grabbed from <a
+href="http://www.ecb.int/stats/eurofxref/eurofxref-daily.xml">http://www.ecb.int/stats/eurofxref/eurofxref-daily.xml</a>.
+You can specify to cache xml in config file.<br />
+		<b>Located at</b> <a href="source-Helper.CurrencyHelper.html#6" title="Go to source code">classes/currencyHelper.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="get" id="_get">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			Array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_get">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.CurrencyHelper.html#33" title="Go to source code">get</a>(
+				mixed
+				<var>$currency</var> = <span class="php-keyword1">null</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			List all available currency, and their values.
+		</div>
+
+		<div class="detailed">
+			
+<p>List all available currency, and their values.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$currency</var></dt>
+					<dd><code>mixed</code><br /> (default: null): Currency code, allow you to recalculate rates from passed
+code.</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "sort" (string, default 'ksort') : php function name to
+sort currencies array.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>Array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="format" id="_format">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_format">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.CurrencyHelper.html#55" title="Go to source code">format</a>(
+				mixed
+				<var>$num</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Format number to locale currency.
+		</div>
+
+		<div class="detailed">
+			
+<p>Format number to locale currency.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$num</var></dt>
+					<dd><code>mixed</code><br />$num: number to format</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "locale" (string, default = global app locale): set custom
+locale for money_format(), "precision" (int, default = 2): float precision,
+"symbol" (bool, default = true): use currency symbol instead of 3 letters code.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="convert" id="_convert">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			Float
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_convert">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.CurrencyHelper.html#92" title="Go to source code">convert</a>(
+				integer
+				<var>$value</var> = <span class="php-num">1</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Convert Currency to other currency....
+		</div>
+
+		<div class="detailed">
+			
+<p>Convert Currency to other currency....</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code><br /> (default: 1)</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): - "from" (string): Currency code reference, "to" (string):
+Currency code to convert, "precision" (int, default = 6): float precision</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>Float</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select_menu" id="_select_menu">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			String
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_select_menu">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.CurrencyHelper.html#116" title="Go to source code">select_menu</a>(
+				mixed
+				<var>$field</var> = <span class="php-keyword1">null</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Display a HTML select menu from currencies.
+		</div>
+
+		<div class="detailed">
+			
+<p>Display a HTML select menu from currencies.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$field</var></dt>
+					<dd><code>mixed</code><br /> (default: null): name attribute for &lt;select&gt;. Default in configured in
+config file.</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): "currency" (string, default = 'EUR'): Base currency to
+calculate rates, "pattern" (string, default = '%l (%c)'): &lt;option&gt; text,
+where %c is currency code and %l is localized string, "sort" (string, default =
+'asort'): php function name to sort select, "attrs" (array, default = array()):
+HTML atributes</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>String</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_data" id="_fetch_data">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 protected static
+			Bool
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_fetch_data">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.CurrencyHelper.html#157" title="Go to source code">fetch_data</a>(
+		)</code>
+
+		<div class="short">
+			Fetch data from convertion service. Results are cached if expiration is set in
+config file.
+		</div>
+
+		<div class="detailed">
+			
+<p>Fetch data from convertion service. Results are cached if expiration is set
+in config file.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>Bool</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rebase" id="_rebase">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 protected static
+			Array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_rebase">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.CurrencyHelper.html#202" title="Go to source code">rebase</a>(
+				string
+				<var>$currency</var> = <span class="php-keyword1">null</span>
+		)</code>
+
+		<div class="short">
+			Rebase from specific currency. if $currency is not a valid value, nothing is
+done. Precision is set in config file.
+		</div>
+
+		<div class="detailed">
+			
+<p>Rebase from specific currency. if $currency is not a valid value, nothing is
+done. Precision is set in config file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$currency</var></dt>
+					<dd><code>string</code><br /> (default: 'EUR'): Base currency for rates</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>Array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods Inherited From <a href="class-Helper.CoreHelper.html#methods">Helper\CoreHelper</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Helper.CoreHelper.html#__init">_init()</a>, 
+<a href="class-Helper.CoreHelper.html#_extend">extend()</a>, 
+<a href="class-Helper.CoreHelper.html#_format_number">format_number()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_config">get_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_lang">get_lang()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_config">set_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_template">set_template()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.CurrencyHelper.html#20" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td width="1%"><code></code></td>
+		<td><div class="position">
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="data" id="$data">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			mixed
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.CurrencyHelper.html#22" title="Go to source code"><var>$data</var></a>
+		</td>
+		<td width="1%"><code><span class="php-keyword1">null</span></code></td>
+		<td><div class="position">
+			<a href="#$data" class="anchor">#</a>
+
+			<div class="short">
+				Associative array for currency rates. Key: Currency Code, Value: CurrencyRate
+			</div>
+
+			<div class="detailed">
+				
+<p>Associative array for currency rates. Key: Currency Code, Value:
+CurrencyRate</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+</div>
+
+		<div id="footer">
+			 API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

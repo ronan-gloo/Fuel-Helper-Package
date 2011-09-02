@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Class Helper\TimeHelper</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?2816280211"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Helper.html">Helper</a>
+						</li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Helper.ConvertHelper.html">ConvertHelper</a></li>
+				<li><a href="class-Helper.CoreHelper.html">CoreHelper</a></li>
+				<li><a href="class-Helper.CurrencyHelper.html">CurrencyHelper</a></li>
+				<li><a href="class-Helper.HelperException.html">HelperException</a></li>
+				<li><a href="class-Helper.NumberHelper.html">NumberHelper</a></li>
+				<li><a href="class-Helper.TextHelper.html">TextHelper</a></li>
+				<li class="active"><a href="class-Helper.TimeHelper.html">TimeHelper</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-Helper.html" title="Summary of Helper"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Class TimeHelper</h1>
+
+	<div class="description">
+	
+<p>All functions supports both SQL Datetime, time string and timestamps.
+Localization is by default related to app configuration.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Helper.CoreHelper.html">Helper\CoreHelper</a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Helper\TimeHelper</b>			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Helper.html">Helper</a><br />
+
+				<b>Extends:</b>
+				Helper<br />
+		<b>Located at</b> <a href="source-Helper.TimeHelper.html#6" title="Go to source code">classes/timeHelper.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="set_locale" id="_set_locale">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_set_locale">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#20" title="Go to source code">set_locale</a>(
+				mixed
+				<var>$locale</var> = <span class="php-keyword1">null</span>
+		)</code>
+
+		<div class="short">
+			If you need to override LC_TIME locale at some point.
+		</div>
+
+		<div class="detailed">
+			
+<p>If you need to override LC_TIME locale at some point.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$locale</var></dt>
+					<dd><code>mixed</code><br /> (default: null)</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_timestamp" id="_to_timestamp">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_timestamp">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#32" title="Go to source code">to_timestamp</a>(
+				mixed
+				<var>$time</var> = <span class="php-keyword1">null</span>
+		)</code>
+
+		<div class="short">
+			Return Timestamp from anything. If no argument, current timestamp is used.
+		</div>
+
+		<div class="detailed">
+			
+<p>Return Timestamp from anything. If no argument, current timestamp is
+used.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$time</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_datetime" id="_to_datetime">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_datetime">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#46" title="Go to source code">to_datetime</a>(
+				mixed
+				<var>$time</var> = <span class="php-keyword1">null</span>
+		)</code>
+
+		<div class="short">
+			Return Datetime from anything. If no argument, current datetime is used.
+		</div>
+
+		<div class="detailed">
+			
+<p>Return Datetime from anything. If no argument, current datetime is used.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$time</var></dt>
+					<dd><code>mixed</code><br />$timestamp</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_format" id="_to_format">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_format">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#60" title="Go to source code">to_format</a>(
+				mixed
+				<var>$format</var> = <span class="php-keyword1">null</span>, 
+				string
+				<var>$time</var> = <span class="php-keyword1">null</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			if $format is not a valid key, we fallback on value passed, so you can to pass
+your own pattern strftime() formatted pattern.
+		</div>
+
+		<div class="detailed">
+			
+<p>if $format is not a valid key, we fallback on value passed, so you can to
+pass your own pattern strftime() formatted pattern.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$format</var></dt>
+					<dd><code>mixed</code><br />$time (default: null)</dd>
+					<dt><var>$time</var></dt>
+					<dd><code>string</code><br />$format (default: 'default')</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array())</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="to_hms" id="_to_hms">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_to_hms">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#79" title="Go to source code">to_hms</a>(
+				integer
+				<var>$sec</var> = <span class="php-num">0</span>, 
+				Array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Seconds to formatted hms value.
+		</div>
+
+		<div class="detailed">
+			
+<p>Seconds to formatted hms value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$sec</var></dt>
+					<dd><code>integer</code><br /> (default: 0): seconds value</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>Array</code><br /> (default: array()). available args: - pad_hours (bool) - separator (string): h
+- m - s sperator - negative (bool): ouput negative sign for negative values</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="diff" id="_diff">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_diff">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#113" title="Go to source code">diff</a>(
+				mixed
+				<var>$from</var>, 
+				mixed
+				<var>$to</var>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Return seconds interval beetween to dates.
+		</div>
+
+		<div class="detailed">
+			
+<p>Return seconds interval beetween to dates.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$from</var></dt>
+					<dd><code>mixed</code><br />$from_time</dd>
+					<dt><var>$to</var></dt>
+					<dd><code>mixed</code><br />$to_time</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): Available args: - to_hms (string): output seconds_to_hms()
+- seconds_to_hms() arguments.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="days_in_month" id="_days_in_month">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_days_in_month">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#136" title="Go to source code">days_in_month</a>(
+				mixed
+				<var>$month</var> = <span class="php-keyword1">null</span>, 
+				mixed
+				<var>$year</var> = <span class="php-keyword1">null</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Display days numbers in given month. If no year is passed, we assume a full
+date… If no args, we use the current month.
+		</div>
+
+		<div class="detailed">
+			
+<p>Display days numbers in given month. If no year is passed, we assume a full
+date… If no args, we use the current month.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$month</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$year</var></dt>
+					<dd><code>mixed</code><br /> (default: null)</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()): - calendar: cal_days_in_month() calendar type</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="diff_in_words" id="_diff_in_words">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_diff_in_words">#</a>
+		<code class="nowrap">
+				<a href="source-Helper.TimeHelper.html#167" title="Go to source code">diff_in_words</a>(
+				mixed
+				<var>$from</var> = <span class="php-quote">'now'</span>, 
+				mixed
+				<var>$to</var> = <span class="php-quote">'now'</span>, 
+				array
+				<var>$args</var> = <span class="php-keyword2">array</span>()
+		)</code>
+
+		<div class="short">
+			Output in words the approximative interval in time between $from and $args.
+		</div>
+
+		<div class="detailed">
+			
+<p>Output in words the approximative interval in time between $from and
+$args.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$from</var></dt>
+					<dd><code>mixed</code><br />$from_time: distance from $time</dd>
+					<dt><var>$to</var></dt>
+					<dd><code>mixed</code><br />$time (default: null): distance reference, now by default</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br /> (default: array()). Available arguments: - prefix_text (string) (default:'there
+is'): prefix output. - separator (string) (default: ', '): separation string for
+years, month… etc - discard_* (bool) (default: false): don't output year,
+month..etc</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods Inherited From <a href="class-Helper.CoreHelper.html#methods">Helper\CoreHelper</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Helper.CoreHelper.html#__init">_init()</a>, 
+<a href="class-Helper.CoreHelper.html#_extend">extend()</a>, 
+<a href="class-Helper.CoreHelper.html#_format_number">format_number()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_config">get_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_get_lang">get_lang()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_config">set_config()</a>, 
+<a href="class-Helper.CoreHelper.html#_set_template">set_template()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			protected static
+			
+		</code></td>
+
+		<td width="1%">
+				<a href="source-Helper.TimeHelper.html#14" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td width="1%"><code></code></td>
+		<td><div class="position">
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+</div>
+
+		<div id="footer">
+			 API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
