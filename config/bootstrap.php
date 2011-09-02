@@ -18,5 +18,6 @@ $helper_bt['procedural_blacklist']	= array(
 	'time' 		=> array('_init'),
 	'text'		=> array('_init'),
 	'number'	=> array('_init'),
-	'convert'	=> array('_init')
+	'convert'	=> array('_init'),
+	'currency'=> array('_init')
 );

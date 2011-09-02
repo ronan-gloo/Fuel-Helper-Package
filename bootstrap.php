@@ -40,7 +40,7 @@ if ($helper_bt['convert_to_procedural'] === true)
 $nspace = 'Helper\\';
 foreach ($helper_bt['classes'] as $key => $class)
 {
-	$cpath = $overrides_path.strtolower($class).'.php';
+	$cpath = $helper_bt['override_folder'].strtolower($class).'.php';
 	if ( ! file_exists($cpath) OR ! is_file($cpath))
 	{
 		class_alias($nspace.$key, $class);
