@@ -25,7 +25,7 @@ class CoreHelper {
 	 * @access public
 	 * @return void
 	 */
-	public function _init()
+	public static function _init()
 	{
 		self::$called_class = str_replace('Helper', '', \Inflector::denamespace(get_called_class()));
 		
